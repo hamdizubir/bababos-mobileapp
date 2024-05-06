@@ -15,7 +15,7 @@ const LoginScreen = () => {
 
   const handleLogin = () => {
     if (!isValidEmail(email)) {
-      setError('invalid email');
+      setError('invalid email, should follow email format');
       return;
     }
 
@@ -32,7 +32,7 @@ const LoginScreen = () => {
       <Text fontSize={'3xl'}>bababos marketplace</Text>
 
       <Input
-        placeholder="Email or Username"
+        placeholder="Email"
         onChangeText={text => setEmail(text)}
         value={email}
       />
